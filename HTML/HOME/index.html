@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noble-Loble Shoes - Home</title>
+    <link rel = "shortcut icon" type="image/png" href="../../Picture/SHOES.png" >
+    <link rel = "stylesheet" href="style.css">
+
+
+    <!-- add library tren css  -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> -->
+    <!-- <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> --> 
+    
+</head>
+<body>
+    
+    <div id="web">
+
+        <header>
+            <div class="navigation-container">
+                <div class="tophead">
+                    <div class="logo">
+                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/280755873_533257591614601_8850558898021281555_n.png?_nc_cat=103&ccb=1-7&_nc_sid=aee45a&_nc_ohc=66C8A_B-818AX_urRoB&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJ-knbKlIeGAbPpyWI24J4VgqnjHxTara8oydq-NJOo4g&oe=62B736FB" alt="" width="125px" >
+     
+                    </div>
+
+                    <div class="ham-btn" id="ham-btn" >
+                        <span>
+                            <i class="fas fa-bars" onclick="openMenu()"></i>
+                        </span>
+                    </div>
+                    <div class="times-btn" id=".times-btn">
+                       <span>
+                        <i class="fas fa-times"></i>
+                       </span>
+                    </div>
+                </div>
+                   <!-- nav bar -->
+
+                   <div class="nav-bar" id="nav-bar">
+                        <nav>
+                            <ul>
+                                <li class="a1"><a href="../HOME/index.html">Home</a></li>
+                                <li class="a2"><a href="../Introduce/index.html">Introduction</a></li>
+                                <li class="a3"><a href="../PRODUCT/index.html">Product</a></li>
+                                <li class="a4"><a href="../News/news.html">News</a></li>
+                                <li class="a5"><a style="cursor: pointer;" onclick="opensignin()">Sign in</a></li>
+                            </ul>
+                        </nav>
+                   </div>
+                   <div class="social-bar">
+                        <ul>
+                            <li>
+                                <a href=""><i class="fab fa-facebook" id="child-1"></i></a>
+                            </li>
+                        
+                            <li>
+                                <a href=""><i class="fab fa-twitter" id="child-2"></i></a>
+                            </li>
+                        
+                            <li>
+                                <a href=""><i class="fab fa-instagram" id="child-3"></i></a>
+                            </li>
+                        
+                            <li>
+                                <a href=""><i class="fab fa-youtube" id="child-4"></i></a>
+                            </li>
+                        </ul>
+                   </div>
+
+            </div>
+        </header> 
+
+        <content>
+            
+            <div id="content">
+                <div id="container">
+                    <i class="fa-solid fa-circle-xmark" id="exit" onclick="exit()"></i>
+                    <form action="" class="sign-in" id="signin" align="center" name="myForm">
+                        <h2 class="title">Sign in</h2>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Username" onkeypress="return ischarkey(event)">
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <input type="submit" value="Login" class="btn">
+                        <p class="social-text">Or Sign in with social platform</p>
+                        <div class="social-media">
+                            <a href="" class="social-icon"><i class="fab fa-facebook"></i></a>
+                            <a href="" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="social-icon"><i class="fab fa-google"></i></a>
+                        </div>
+                        <p class="account-text">Don't have an account? <a id="sign-up-btn2" onclick="opensignoutclosesignin()" style="font-weight: 800;">Sign up</a></p>
+                    </form>
+    
+                    <form action="" class="sign-up" id="signup" align="center" name="myForm">
+                        <h2 class="title">Sign up</h2>
+                        <div class="input-field">
+                            <i class="fas fa-user"></i>
+                            <input type="text" placeholder="Username" onkeypress="return ischarkey(event)">
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-envelope"></i>
+                            <input type="text" placeholder="Email" name="email">
+                        </div>
+                        <div class="input-field">
+                            <i class="fas fa-phone"></i>
+                            <input type="text" placeholder="Phone" onkeypress="return isnumberkey(event)" name="text1">  
+                        </div>
+                        <p id="thongbao"></p>
+                        <div class="input-field">
+                            <i class="fas fa-lock"></i>
+                            <input type="password" placeholder="Password">
+                        </div>
+                        <input type="submit" value="Sign up" class="btn">
+                        <p class="social-text">Or Sign in with social platform</p>
+                        <div class="social-media">
+                            <a href="" class="social-icon"><i class="fab fa-facebook"></i></a>
+                            <a href="" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="social-icon"><i class="fab fa-google"></i></a>
+                        </div>
+                        <p class="account-text">Already have an account? <a  id="sign-in-btn2" onclick="opensigninclosesignout()" style="font-weight: 800;">Sign in</a></p>
+                    </form>
+                </div>
+            </div>
+            
+        
+            <div class="container">
+
+            
+
+                <h1 class="title">Shop Our Top Brands</h1>
+                <ul id="list-common">
+                    
+                    <li class="item">
+                        <div class="circle">
+                            <img src="https://media.s-bol.com/Y6gXGqPJV5KY/550x764.jpg" alt="">                           
+                        </div>
+                        <div class="name">NIKE</div>
+                        <p class="intro">Just Do It</p>
+                        <button class="book">BOOK</button>
+                    </li>
+
+                    <li class="item">
+                        <div class="circle">
+                            <img src="https://wallpaperaccess.com/full/1176887.jpg" alt="">
+                        </div>
+                        <div class="name">CONVERSE</div>
+                        <p class="intro">It's Converse for Comfort.</p>
+                        <button class="book">BOOK</button>
+                    </li>
+
+                    <li class="item">
+                        <div class="circle">
+                            <img src="https://wallup.net/wp-content/uploads/2018/09/30/259541-sports-adidas-shoes-brands-logos-748x468.jpg" alt="">
+                        </div>
+                        <div class="name">ADIDAS</div>
+                        <p class="intro">Impossible is Nothing</p>
+                        <button class="book">BOOK</button>
+                    </li>
+
+
+                </ul>
+
+                <h1 class="title">MY OUR PRODUCT</h1>
+                <ul id="slider" >
+                    <a name = "discoverslider"></a>
+                    <div class="num">
+                        <li class="boxrectangle">
+                            <div class="modelshoes" >
+                                <img src="../../Model/model1.png">
+                            </div>
+                        </li>
+    
+                        <li class="boxrectangle">
+                            <div class="modelshoes">
+                                <img src="../../Model/model2.jpg">
+                            </div>
+                        </li>
+    
+                        <li class="boxrectangle">
+                            <div class="modelshoes">
+                                <img src="../../Model/model3.jpeg">
+                            </div>
+                        </li>
+
+                    </div>
+                    
+                    <div class="num">
+                    
+                        <li class="boxrectangle">
+                            <div class="modelshoes">
+                                <img src="../../Model/model4.jpg">
+                            </div>
+                        </li>
+    
+                        <li class="boxrectangle">
+                            <div class="modelshoes">
+                                <img src="../../Model/model5.jpeg">
+                            </div>
+                        </li>
+    
+                        <li class="boxrectangle">
+                            <div class="modelshoes">
+                                <img src="../../Model/model6.jpg">
+                            </div>
+                        </li>
+
+                    </div>
+
+                    <div class="num">
+
+                        <li class="boxrectangle">
+                            <div class="modelshoes">
+                                <img src="../../Model/model7.jpeg">
+                            </div>
+                        </li>
+    
+                        <li class="boxrectangle">
+                            <div class="modelshoes">
+                                <img src="../../Model/model8.jpg">
+                            </div>
+                        </li>
+    
+                        <li class="boxrectangle">
+                            <div class="modelshoes">
+                                <img src="../../Model/model9.jpg">
+                            </div>
+                        </li>
+
+                    </div>
+                    
+                    
+                </ul>
+
+                <h1 class="title">CONVERSE</h1>
+                
+                <div class="product">
+                    <div class="rowproduct" >
+                        <div class="product_image" id="cvone">
+                            <img src="../../Product_Shoes/Converse/cv1.jpg">
+                        </div>
+
+                        <div class="choose_image">
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Converse/cv1.jpg" onclick="cvoneone()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Converse/cv1-2.jpeg" onclick="cvonetwo()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Converse/cv1-3.jpg" onclick="cvonethree()">
+                            </div>
+                        </div>
+
+                        <div class="name_shoes">
+                            <div class="trans_word" >
+                                <h3>
+                                    BE NICE CONVERSE HIGH CUT
+                                </h3>
+                                <div class="product_price">
+                                    <strong>180.00$</strong>
+                                </div>
+                            </div>
+                            
+                            <div class="button_book">
+                                <button class="book">BOOK</button>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="rowproduct"  >
+                        <div class="product_image" id="cvtwo">
+                            <img  src="../../Product_Shoes/Converse/cv2.jpg">
+                        </div>
+                        
+                        <div class="choose_image">
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Converse/cv2.jpg" onclick="cvtwoone()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Converse/cv2-2.jpg" onclick="cvtwotwo()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Converse/cv2-3.jpg" onclick="cvtwothree()">
+                            </div>
+                        </div>
+
+                        <div class="name_shoes">
+                            <div class="trans_word" >
+                                <h3>
+                                    CONVERSE CHUCK TAYLOR 
+                                </h3>
+                                <div class="product_price">
+                                    <strong>200.00$</strong>
+                                </div>
+                            </div>
+                            
+                            <div class="button_book">
+                                <button class="book">BOOK</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="rowproduct" >
+                        <div class="product_image" id="cvthree">
+                            <img src="../../Product_Shoes/Converse/cv3.jpg">
+                        </div>
+
+                        <div class="choose_image">
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Converse/cv3.jpg" onclick="cvthreeone()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Converse/cv3-2.jpg" onclick="cvthreetwo()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Converse/cv3-3.jpg" onclick="cvthreethree()">
+                            </div>
+                        </div>
+
+                        <div class="name_shoes">
+                            <div class="trans_word" >
+                                <h3>
+                                    PINK CHUCK CONVERSE 
+                                </h3>
+                                <div class="product_price">
+                                    <strong>100.00$</strong>
+                                </div>
+                            </div>
+                            
+                            <div class="button_book">
+                                <button class="book">BOOK</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="rowproduct" >
+                        <div class="product_image" id="cvfour">
+                            <img src="../../Product_Shoes/Converse/cv4-3.jpg">
+                        </div>
+
+                        <div class="choose_image">
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Converse/cv4.jpg" onclick="cvfourone()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Converse/cv4-2.jpg" onclick="cvfourtwo()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Converse/cv4-3.jpg" onclick="cvfourthree()">
+                            </div>
+                        </div>
+
+                        <div class="name_shoes">
+                            <div class="trans_word" >
+                                <h3>
+                                    GALAXY CONVERSE HIGH CUT
+                                </h3>
+                                <div class="product_price">
+                                    <strong>201.00$</strong>
+                                </div>
+                            </div>
+                            
+                            <div class="button_book">
+                                <button class="book">BOOK</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="seemore">
+                    <button >SEE MORE</button>
+                </div>
+
+                <h1 class="title">NIKE</h1>
+
+
+                <div class="product">
+                    <div class="rowproduct" >
+                        <div class="product_image" id="none">
+                            <img src="../../Product_Shoes/Nike/n1-1.jpg">
+                        </div>
+
+                        <div class="choose_image">
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Nike/n1-1.jpg" onclick="noneone()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Nike/n1-2.jpg" onclick="nonetwo()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Nike/n1-3.jpg" onclick="nonethree()">
+                            </div>
+                        </div>
+
+                        <div class="name_shoes">
+                            <div class="trans_word" >
+                                <h3>
+                                    NIKE LEBRON 13 AKRONITE 
+                                </h3>
+                                <div class="product_price">
+                                    <strong>145.00$</strong>
+                                </div>
+                            </div>
+                            
+                            <div class="button_book">
+                                <button class="book">BOOK</button>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="rowproduct"  >
+                        <div class="product_image" id="ntwo">
+                            <img  src="../../Product_Shoes/Nike/n2-1.jpg">
+                        </div>
+                        
+                        <div class="choose_image">
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Nike/n2-1.jpg" onclick="ntwoone()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Nike/n2-2.jpg" onclick="ntwotwo()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Nike/n2-3.jpg" onclick="ntwothree()">
+                            </div>
+                        </div>
+
+                        <div class="name_shoes">
+                            <div class="trans_word" >
+                                <h3>
+                                    NIKE LEBRON 11 2K14 
+                                </h3>
+                                <div class="product_price">
+                                    <strong>300.00$</strong>
+                                </div>
+                            </div>
+                            
+                            <div class="button_book">
+                                <button class="book">BOOK</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="rowproduct" >
+                        <div class="product_image" id="nthree">
+                            <img src="../../Product_Shoes/Nike/n3-1.jpg">
+                        </div>
+
+                        <div class="choose_image">
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Nike/n3-1.jpg" onclick="nthreeone()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Nike/n3-2.jpg" onclick="nthreetwo()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Nike/n3-3.jpg" onclick="nthreethree()">
+                            </div>
+                        </div>
+
+                        <div class="name_shoes">
+                            <div class="trans_word" >
+                                <h3>
+                                    NIKE LEBRON 11 PREMIUM
+                                </h3>
+                                <div class="product_price">
+                                    <strong>240.00$</strong>
+                                </div>
+                            </div>
+                            
+                            <div class="button_book">
+                                <button class="book">BOOK</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="rowproduct" >
+                        <div class="product_image" id="nfour">
+                            <img src="../../Product_Shoes/Nike/n4-1.jpg">
+                        </div>
+
+                        <div class="choose_image">
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Nike/n4-1.jpg" onclick="nfourone()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Nike/n4-2.jpg" onclick="nfourtwo()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Nike/n4-3.jpg" onclick="nfourthree()">
+                            </div>
+                        </div>
+
+                        <div class="name_shoes">
+                            <div class="trans_word" >
+                                <h3>
+                                    NIKE AIR FOAMPOSITE
+                                </h3>
+                                <div class="product_price">
+                                    <strong>300.00$</strong>
+                                </div>
+                            </div>
+                            
+                            <div class="button_book">
+                                <button class="book">BOOK</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="seemore">
+                    <button >SEE MORE</button>
+                </div>
+
+
+
+                <h1 class="title">ADIDAS</h1>
+
+
+                <div class="product">
+                    <div class="rowproduct" >
+                        <div class="product_image" id="adone">
+                            <img src="../../Product_Shoes/Adidas/ad1-1.jpg">
+                        </div>
+
+                        <div class="choose_image">
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Adidas/ad1-1.jpg" onclick="adoneone()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Adidas/ad1-2.jpg" onclick="adonetwo()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Adidas/ad1-3.jpeg" onclick="adonethree()">
+                            </div>
+                        </div>
+
+                        <div class="name_shoes">
+                            <div class="trans_word" >
+                                <h3>
+                                    ADIDAS SUPERSTAR SUPEREARTH
+                                </h3>
+                                <div class="product_price">
+                                    <strong>300$</strong>
+                                </div>
+                            </div>
+                            
+                            <div class="button_book">
+                                <button class="book">BOOK</button>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="rowproduct"  >
+                        <div class="product_image" id="adtwo">
+                            <img  src="../../Product_Shoes/Adidas/ad2-1.jpg">
+                        </div>
+                        
+                        <div class="choose_image">
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Adidas/ad2-1.jpg" onclick="adtwoone()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Adidas/ad2-2.jpg" onclick="adtwotwo()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Adidas/ad2-3.jpg" onclick="adtwothree()">
+                            </div>
+                        </div>
+
+                        <div class="name_shoes">
+                            <div class="trans_word" >
+                                <h3>
+                                    ADIDAS RIVALRY 
+                                </h3>
+                                <div class="product_price">
+                                    <strong>100.00$</strong>
+                                </div>
+                            </div>
+                            
+                            <div class="button_book">
+                                <button class="book">BOOK</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="rowproduct" >
+                        <div class="product_image" id="adthree">
+                            <img src="../../Product_Shoes/Adidas/ad3-1.jpg">
+                        </div>
+
+                        <div class="choose_image">
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Adidas/ad3-1.jpg" onclick="adthreeone()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Adidas/ad3-2.jpg" onclick="adthreetwo()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Adidas/ad3-3.jpg" onclick="adthreethree()">
+                            </div>
+                        </div>
+
+                        <div class="name_shoes">
+                            <div class="trans_word" >
+                                <h3>
+                                    JEREMY SCOTT ADIDAS
+                                </h3>
+                                <div class="product_price">
+                                    <strong>165.00$</strong>
+                                </div>
+                            </div>
+                            
+                            <div class="button_book">
+                                <button class="book">BOOK</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="rowproduct" >
+                        <div class="product_image" id="adfour">
+                            <img src="../../Product_Shoes/Adidas/ad4-1.jpg">
+                        </div>
+
+                        <div class="choose_image">
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Adidas/ad4-1.jpg" onclick="adfourone()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Adidas/ad4-2.jpg" onclick="adfourtwo()">
+                            </div>
+                            <div class="small_image">
+                                <img src="../../Product_Shoes/Adidas/ad4-3.jpg" onclick="adfourthree()">
+                            </div>
+                        </div>
+
+                        <div class="name_shoes">
+                            <div class="trans_word" >
+                                <h3>
+                                    ADIDAS STAN MITH x MICKEY
+                                </h3>
+                                <div class="product_price">
+                                    <strong>95.00$</strong>
+                                </div>
+                            </div>
+                            
+                            <div class="button_book">
+                                <button class="book">BOOK</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="seemore">
+                    <button >SEE MORE</button>
+                </div>
+                
+                
+
+
+
+
+
+
+
+
+
+
+                
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </content>
+
+        <div id="content">
+            <div id="container">
+                <i class="fa-solid fa-circle-xmark" id="exit" onclick="exit()"></i>
+                <form action="" class="sign-in" id="signin" align="center" name="myForm">
+                    <h2 class="title">Sign in</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" onkeypress="return ischarkey(event)">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Login" class="btnn">
+                    <p class="social-text">Or Sign in with social platform</p>
+                    <div class="social-media">
+                        <a href="" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="" class="social-icon"><i class="fab fa-google"></i></a>
+                    </div>
+                    <p class="account-text">Don't have an account? <a id="sign-up-btn2" onclick="opensignoutclosesignin()" style="font-weight: 800;">Sign up</a></p>
+                </form>
+
+                <form action="" class="sign-up" id="signup" align="center" name="myForm">
+                    <h2 class="title">Sign up</h2>
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" onkeypress="return ischarkey(event)">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" placeholder="Email" name="email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fas fa-phone"></i>
+                        <input type="text" placeholder="Phone" onkeypress="return isnumberkey(event)" name="text1">  
+                    </div>
+                    <p id="thongbao"></p>
+                    <div class="input-field">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Sign up" class="btnn">
+                    <p class="social-text">Or Sign in with social platform</p>
+                    <div class="social-media">
+                        <a href="" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="" class="social-icon"><i class="fab fa-google"></i></a>
+                    </div>
+                    <p class="account-text">Already have an account? <a  id="sign-in-btn2" onclick="opensigninclosesignout()" style="font-weight: 800;">Sign in</a></p>
+                </form>
+            </div>
+        </div>
+  
+
+
+
+        <footer>
+
+            <div class="footer">
+                <div class="con">
+                    <div class="sec aboutus" id="nguyen">
+                        <h2>ABOUT US</h2>
+                            <p>
+                                Hi my friends!!! Welcome to the "Noble-Loble Shoes" website. Here you can buy the shoes you like. Here you can choose and find most of the famous shoes in the world. Be the nobles, you can choose for yourself the shoes that fit your feet. Your satisfaction is our honor.
+                            </p>
+                        
+                        <ul class="icon">
+                            <li><a href=""><i class="fab fa-facebook" ></i></a></li>
+                            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                            <li><a href=""><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="sec quicklink" id="nguyen">
+                        <h2>
+                            Quick Links
+                        </h2>
+                        <ul>
+                            <li><a href="../Policy/Policy.html">Warranty Policy</a></li>
+                            <li><a href="../Policy/Policy.html">Payment Policy</a></li>
+                            <li><a href="../CONTACT/index.html">Contact Us</a></li>
+                            <li><a href="../PRODUCT/index.html">Product</a></li>
+                            <li><a onclick="opensignin()">Sign in</a></li>
+                        </ul>
+                    </div>
+    
+                    <div class="sec quicklink" id="nguyen">
+                        <h2>Newletter</h2>
+                        <p>You can write comments about our website in this section.</p>
+                        <div class="email">
+                            <div>
+                                <input type="text" placeholder="Email address">
+                            </div>
+                            <button class="btn1">GET NOTIFICATION</button>
+                        </div>
+                    </div>
+                    
+                    <div class="sec quicklink" id="nguyen">
+                        <h2>Contact Us</h2>
+                        <div class="address" >
+                            <ul>
+                                <li>
+                                    <span><i class="fas fa-map-marker"></i></span>
+                                    <span>470 Tran Dai Nghia, <br> Ngu Hanh Son, DaNang, <br> VietNam</span>
+                                </li>
+                                <li>
+                                    <span><i class="fas fa-phone"></i></span>
+                                    <span>0354723814 <br> 0839519415</span>
+                                    
+                                </li>
+                                <li>
+                                    <span><i class="fas fa-envelope"></i></span>
+                                    <span>nguyennvv.21it@vku.udn.vn <br> tungtt2.21it@vku.udn.vn</span>
+                                
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright"> <p>Copyright &copy; 2022 The Noble - Loble || VinhNguyen - ThanhTung</p> </div>
+        </footer>
+    </div>
+
+    
+
+    
+
+</body>
+<script src="../chucnang.js"></script>
+
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</html>
