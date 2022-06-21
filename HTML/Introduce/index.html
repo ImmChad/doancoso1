@@ -7,8 +7,9 @@
     <!-- <title>Noble-Loble Shoes</title> -->
     <!-- <link rel="stylesheet" href="style.css"> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  
+    <link rel="stylesheet" href="../Style/header-footer.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../Style/signin.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@300;400;500;700;900&display=swap" rel="stylesheet">
         <!-- fontawesome -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
@@ -29,10 +30,13 @@
             <div class="navigation-container">
                 <div class="tophead">
                     <div class="logo">
-                        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/280755873_533257591614601_8850558898021281555_n.png?_nc_cat=103&ccb=1-7&_nc_sid=aee45a&_nc_ohc=66C8A_B-818AX_urRoB&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJ-knbKlIeGAbPpyWI24J4VgqnjHxTara8oydq-NJOo4g&oe=62B736FB" alt="" width="125px" >
+                        <a href="../HOME/index.html">
+                    <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/280755873_533257591614601_8850558898021281555_n.png?_nc_cat=103&ccb=1-7&_nc_sid=aee45a&_nc_ohc=66C8A_B-818AX_urRoB&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AVJ-knbKlIeGAbPpyWI24J4VgqnjHxTara8oydq-NJOo4g&oe=62B736FB" alt="" width="125px" height="125px">
+    
+                        </a>
      
                     </div>
-
+    
                     <div class="ham-btn" id="ham-btn" >
                         <span>
                             <i class="fas fa-bars" onclick="openMenu()"></i>
@@ -45,15 +49,24 @@
                     </div>
                 </div>
                    <!-- nav bar -->
-
+    
                    <div class="nav-bar" id="nav-bar">
                         <nav>
                             <ul>
-                                <li class="a1"><a href="../HOME/index.html">Home</a></li>
-                                <li class="a2"><a href="../Introduce/index.html">Introduction</a></li>
-                                <li class="a3"><a href="../PRODUCT/index.html">Product</a></li>
-                                <li class="a4"><a href="../News/news.html">News</a></li>
-                                <li class="a5"><a style="cursor: pointer;" onclick="opensignin()">Sign in</a></li>
+                                <li class="a1"><a href="../Home/index.html"><i class="fa fa-home"></i>Home</a></li>
+                                <li class="a2"><a href="../Introduce/index.html"><i class="fa-solid fa-shoe-prints"></i>Introduction</a></li>
+                                <li class="a3"><a>Product<i class="fas fa-circle-chevron-down"></i></a>
+                                    <ul class="da-cap">
+                                        <li><a href="../Product/index.html"><i class="fa-solid fa-socks"></i> Adidas</a></li>
+                                        <li><a href="../Product/Converse.html"><i class="fa-solid fa-socks"></i> Converse</a></li>
+                                        <li><a href="../Product/Nike.html"><i class="fa-solid fa-socks"></i> Fila</a></li>
+                                        <li><a href="../Product/Puma.html"><i class="fa-solid fa-socks"></i> Nike</a></li>
+                                        <li><a href="../Product/Vans.html"><i class="fa-solid fa-socks"></i> Vans</a></li>
+    
+                                    </ul>
+                                </li>
+                                <li class="a4"><a href="../News/news.html"><i class="fa-solid fa-newspaper"></i>News</a></li>
+                                <li class="a5"><a style="cursor: pointer;" onclick="opensignin1()"><i class="fa-solid fa-circle-user"></i>Sign in</a></li>
                             </ul>
                         </nav>
                    </div>
@@ -76,10 +89,13 @@
                             </li>
                         </ul>
                    </div>
-
+    
             </div>
-        </header>     
+        </header>
 
+
+
+        <!-- ============================================================================= -->
 
 
     <div class="content">
@@ -110,115 +126,7 @@
                 </div>
             </section>
 
-            <!-- <section class="sec1" data-aos="zoom-in">
-                <div class="container">
-                    <div class="sec1-inner">
-                        <div class="text text-left">
-                            <h3>The NOBLE - LOBLE</h3>
-                            <h3>The shoes can change your life </h3>
-                        </div>
-                        <div class="text text-right">
-                            <p> Tự hào là một thương hiệu giày thể 
-                                thao mang đến sự hài lòng, sang trọng và cá tính cho khách hàng. 
-                                Đến với chúng tôi, bạn sẽ được thỏa sức đắm chìm 
-                                trong một thế giới bao gồm tất cả những đôi giày thể thao 
-                                trẻ trung, mạnh mẽ nhưng không kém phần sang trọng. Sản phẩm của chúng tôi là 
-                                những đôi giày mang thương hiệu nổi tiếng như Adidas, Nike, Puma, Converse,...
-                             </p>
-                        </div>
-                    </div>
-                </div>
-
-            </section>
-
-            <section class="sec2 left-right-sec" data-aos="zoom-in-right">
-                <div class="container">
-                    <div class="sec2-inner">
-                        <div class="img">
-                            <div class="img"> <img src="/Picture/nguyen.jpg" width="379px" height="581px" alt=""> </div>
-                        </div>
-                        <div class="text">
-                            <h2>Vĩnh Nguyên <br> CEO The NOBLE-LOBLE </h2>
-                            <div class="text-inner">
-                                <p>Sinh viên của trường Đại học CNTT và TT Việt-Hàn. Với phương châm học là chính, anh đã 
-                                    rất tâm huyết tạo dựng nên thương hiệu kinh doanh giày dép chất lượng này
-                                   
-                                </p>
-                                <a href="#" class="btn"> Learn more</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="sec3 left-right-sec" data-aos="zoom-in-left">
-                <div class="container">
-                    <div class="sec3-inner">
-                       
-                        <div class="text">
-                            <h2>Thanh Tùng <br>CEO The NOBLE-LOBLE </h2>
-                            <div class="text-inner">
-                                <p>Sinh viên của trường Đại học CNTT và TT Việt-Hàn. Với sự nhiệt
-                                    huyết và ham học hỏi của mình anh quyết tâm xây dựng The Noble-Loble vương tầm thế giới.
-                                   
-                                </p>
-                                <a href="#" class="btn"> Learn more</a>
-                            </div>
-                        </div>
-                        <div class="img">
-                            <div class="img"> <img src="/Picture/tungque1.png" alt=""> </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="sec2 left-right-sec" data-aos="zoom-out-right">
-                <div class="container">
-                    <div class="sec2-inner">
-                        <div class="img">
-                            <div class="img"> <img src="/Picture/1.jpg" alt=""> </div>
-                        </div>
-                        <div class="text">
-                            <h2>Tầm nhìn - Hướng đi</h2>
-                            <div class="text-inner">
-                                <p>
-                                    Với đội ngũ nhân viên hùng hậu cùng 2 vị CEO tài năng, The Noble - Loble tự tin là một 
-                                    hệ thống cửa hàng hàng đầu cho việc chọn những đôi giày mà khách hàng yêu thích
-                                </p>
-                             
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </section>
-
-            <section class="sec3 left-right-sec" data-aos="zoom-out-left">
-                <div class="container">
-                    <div class="sec3-inner">
-                       
-                        <div class="text">
-                            <h2>Tiêu chí </h2>
-                            <div class="text-inner">
-                                <p>
-                                    Sản phẩm cao cấp <br>
-                                    Giá cả hợp lí - Chất lượng cao <br>
-                                    Đa dạng về phong cách, kiểu dáng <br>
-                                    Dịch vụ chăm sóc khách hàng 24/7 <br>
-                                    Giao hàng nhanh chóng trên cả nước <br>
-                                    Được nhập từ các thương hiệu nổi tiếng: Adidas, Nike,... 
-                        
-                                </p>
-                             
-                            </div>  
-                        </div>
-                        <div class="img">
-                            <div class="img"> <img src="/Picture/3.jpg" alt="" width="470px" height="600px"> </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
+            <
 
 
 
@@ -264,7 +172,7 @@
 
 
                 <div class="chinh">
-                    <div class="sec2" >
+                    <div class="sec2">
                         <div class="container">
                             
                                 <div class="image">
@@ -278,7 +186,7 @@
                                             With the motto of learning as the main thing, he has been very dedicated to creating this quality footwear business brand
                                            
                                         </p>
-                                        <a href="#" class="btn"> Learn more</a>
+                                        <a href="#" class="btnn"> Learn more</a>
                                     </div>
                                 </div>
                            
@@ -287,7 +195,7 @@
                     
                     <hr>
                     
-                    <div class="sec3" >
+                    <div class="sec3">
                         <div class="container">
                             <div class="text">
                                 <h2>Thanh Tung <br>CEO The NOBLE-LOBLE </h2>
@@ -295,7 +203,7 @@
                                     <p>Student at Vietnam-Korea University of Information and Communication Technology. 
                                         With his enthusiasm and inquisitiveness, he is determined to build The Noble-Loble to be world class.
                                     </p>
-                                    <a href="#" class="btn"> Learn more</a>
+                                    <a href="#" class="btnn"> Learn more</a>
                                 </div>
                             </div>
                             <div class="image">
@@ -327,7 +235,7 @@
     
                     <hr>
     
-                    <div class="sec3" >
+                    <div class="sec3">
                         <div class="container">
                             <div class="text">
                                 <h2>Criterion </h2>
@@ -415,7 +323,7 @@
                 
 
             </section>
-            <section class="sec1">
+            <section class="sec1" id="sec1">
                 <div class="container">
                     <div class="sec1-inner" id="sec1-inner">
                         <div class="text text-left" id="text-left">
@@ -439,15 +347,31 @@
         <i class="fa-solid fa-circle-xmark" id="exit" onclick="exit()"></i>
         <form action="" class="sign-in" id="signin" align="center" name="myForm">
             <h2 class="title">Sign in</h2>
-            <div class="input-field">
-                <i class="fas fa-user"></i>
-                <input type="text" placeholder="Username" onkeypress="return ischarkey(event)">
+        
+                <div class="form-group">
+                    <div class="input-field">
+                        <i class="fas fa-user"></i>
+                        <input type="text" placeholder="Username" id="fullname" onkeypress="return ischarkey(event)">
+                        <!-- <p>Hello</p> -->
+                    </div>
+                    <span class="form-mess"></span>
+                </div>
+
+                <!-- <span>Hello</span> -->
+            
+            <!-- <p>Hello</p> -->   
+            <div class="form-group">
+                
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" id="password">
+                    <span id="eye"><i class="fa-solid fa-eye" id="open" onclick="openpass()"></i>
+                        <i class="fa-solid fa-eye-slash" id="close" onclick="closepass()"></i></span>
+                </div>
+                <span class="form-mess"></span>
+            
             </div>
-            <div class="input-field">
-                <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Password">
-            </div>
-            <input type="submit" value="Login" class="btn1">
+            <input type="submit" value="Login" class="btn">
             <p class="social-text">Or Sign in with social platform</p>
             <div class="social-media">
                 <a href="" class="social-icon"><i class="fab fa-facebook"></i></a>
@@ -458,26 +382,47 @@
             <p class="account-text">Don't have an account? <a id="sign-up-btn2" onclick="opensignoutclosesignin()" style="font-weight: 800;">Sign up</a></p>
         </form>
 
-        <form action="" class="sign-up" id="signup" align="center" name="myForm">
+        <form action="" class="sign-up" id="signup" align="center">
             <h2 class="title">Sign up</h2>
-            <div class="input-field">
-                <i class="fas fa-user"></i>
-                <input type="text" placeholder="Username" onkeypress="return ischarkey(event)">
+            <div class="form-group">
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Username" id="fullname" onkeypress="return ischarkey(event)">
+                    <!-- <p>Hello</p> -->
+                </div>
+                <span class="form-mess"></span>
             </div>
-            <div class="input-field">
-                <i class="fas fa-envelope"></i>
-                <input type="text" placeholder="Email" name="email">
+
+            <div class="form-group">
+                <div class="input-field">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="Email" id="Email" >
+                    <!-- <p>Hello</p> -->
+                </div>
+                <span class="form-mess"></span>
             </div>
-            <div class="input-field">
-                <i class="fas fa-phone"></i>
-                <input type="text" placeholder="Phone" onkeypress="return isnumberkey(event)" name="text1">  
+            
+            <div class="form-group">
+                <div class="input-field">
+                    <i class="fas fa-phone"></i>
+                    <input type="text" placeholder="Phone" id="phone" >
+                    <!-- <p>Hello</p> -->
+                </div>
+                <span class="form-mess"></span>
             </div>
-            <p id="thongbao"></p>
-            <div class="input-field">
-                <i class="fas fa-lock"></i>
-                <input type="password" placeholder="Password">
+                                 
+            <div class="form-group">
+                
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" id="password1">
+                    <span id="eye"><i class="fa-solid fa-eye" id="open1" onclick="openpass1()"></i>
+                        <i class="fa-solid fa-eye-slash" id="close1" onclick="closepass1()"></i></span>
+                </div>
+                <span class="form-mess"></span>
+            
             </div>
-            <input type="submit" value="Sign up" class="btn1">
+            <input type="submit" value="Sign up" class="btn">
             <p class="social-text">Or Sign in with social platform</p>
             <div class="social-media">
                 <a href="" class="social-icon"><i class="fab fa-facebook"></i></a>
@@ -489,8 +434,6 @@
         </form>
     </div>
 </div>
-
-
 
 
 
@@ -528,7 +471,7 @@
                         <li><a href="../Policy/Policy.html">Payment Policy</a></li>
                         <li><a href="../CONTACT/index.html">Contact Us</a></li>
                         <li><a href="../PRODUCT/index.html">Product</a></li>
-                        <li><a onclick="opensignin()">Sign in</a></li>
+                        <li><a onclick="opensignin1()">Sign in</a></li>
                     </ul>
                 </div>
 
@@ -581,26 +524,35 @@
         duration:1500
     });
 
-    
-    function opensignin(){
-        document.getElementById('content').style.display = 'flex';
-        document.getElementById('container').style.display = 'block';
-    };
-    function exit(){
-     document.getElementById('content').style.display = 'none';
-    }
-
-    function opensignoutclosesignin(){
-         document.getElementById('signup').style.display = 'block';
-         document.getElementById('signin').style.display = 'none';
-     }
-     function opensigninclosesignout(){
-         document.getElementById('signin').style.display = 'block';
-         document.getElementById('signup').style.display = 'none';
-     }
+  
   </script>
 </body>
-<script src="script.js"></script>
-<script src="../chucnang.js"></script>
+<script src="../Javascript/head.js"></script>
+<script src="../Javascript/signin.js"></script>
 
+<script src="../chucnang.js"></script>
+<script src="../Validator.js"></script>
+<script>
+    Validator({
+        form: '#signin',
+        errorSelector: '.form-mess',
+
+        rules:[
+        Validator.isRequired('#fullname')
+        ,Validator.isPassword('#password', 6)
+        
+        ]
+    });
+    Validator({
+        form: '#signup',
+
+        errorSelector: '.form-mess',
+        rules:[
+            Validator.isRequired('#fullname')
+            ,Validator.isEmail('#Email')
+            ,Validator.isPassword('#password1', 6)
+        ]
+    });
+
+</script>
 </html>

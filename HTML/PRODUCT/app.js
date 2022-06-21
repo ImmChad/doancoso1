@@ -170,7 +170,6 @@ function slideshow5() {
 }
 
 function slideshow6() {
-
     let change_dots1 = document.getElementById('change_dots1');
     change_dots1.style.color = 'black';
     
@@ -194,7 +193,6 @@ function slideshow6() {
     banerimg.innerHTML = '<img src="../../Banner/banner6.jpg" >'
 
     setTimeout(slideshow1, 2000);
-
 }
 
 
